@@ -19,5 +19,10 @@ void PrintArray(int n)
         Console.Write($"{n}, ");
         PrintArray(n - 1);
     }
+    else if (n < 2)
+    {
+        Console.Write($"{n}, ");
+        PrintArray(n + 1);
+    }
 }
 
